@@ -324,7 +324,7 @@
     color: white;
     position: relative;
     overflow: hidden;
-    min-height: 80vh;
+    min-height: 100vh;
     gap: 3rem;
   }
   
