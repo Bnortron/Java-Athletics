@@ -310,6 +310,11 @@
     .mobile-nav-toggle .icon-close {
       display: none;
     }
+
+    .nav-logo {
+        max-width: 3em;
+        /* margin-left: em; */
+    }
   }
   
   /* Hero Section Styling */
@@ -415,16 +420,17 @@
     }
   
     .hero-content {
-        margin-inline: 1em;
+        margin-inline: 3em;
         margin-top: -10em;
     }
   
     .hero-text {
-      font-size: var(--size-800);
+      font-size: var(--size-700);
     }
   
     .hero-book-text {
       font-family: 'Inter', sans-serif;
+      font-size: var(--size-400)
     }
   }
 
