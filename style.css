@@ -84,6 +84,7 @@
   html, 
   body {
     height: 100%;
+    /* background-color: var(--clr-main-dark); */
   }
   
   /* Set core body defaults */
@@ -534,6 +535,77 @@
     .option-container {
       grid-template-columns: repeat(1, 1fr);
       gap: var(--size-100);
+    }
+  }
+
+  /* Owner Section Styling */
+  .owner-note {
+    text-indent: 2em;
+  }
+
+.owner {
+    position: relative;
+    isolation: isolate;
+    margin-inline: auto;
+    padding: 1em;
+  }
+  
+  .owner-image {
+    width: 100%;
+    /* object-fit: contain; */
+  
+    border-radius: 2rem;
+  }
+  
+  .owner-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--size-900);
+  }
+  
+  @media (max-width: 50em) {
+    .owner-columns {
+      grid-template-columns: repeat(1, 1fr);
+      gap: var(--size-100);
+    }
+  }
+  
+  .owner-text-container {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .owner-text-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  
+    background-image: url("images/ja-ceo-signature.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    filter: invert(1);
+  
+    aspect-ratio: 1;
+    width: 10em;
+    height:fit-content;
+    margin-top: 120%;
+    margin-left: 60%;
+  } */
+  
+  .owner-signature-text {
+    position: relative;
+    margin: 0;
+    bottom: 0;
+  }
+
+  @media (max-width: 50em) {
+    .owner-text-container::before {
+        display: block;
+        margin-top: 80%;
+        width: 9em;
     }
   }
 
