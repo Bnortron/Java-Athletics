@@ -2,228 +2,266 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Athletics Site</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Athletics Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="primary-header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                    <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
-                    <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
-                    <span class="visually-hidden">Menu</span>
-                </button>
-                <nav class="primary-navigation" id="primary-navigation">
-                    <img class="nav-logo" src="images/logo.png" alt="">
-                    <ul aria-label="Primary" role="list" class="nav-list">
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Feedback</a></li>
-                        <li><a href="#">Socials</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
+          <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <img class="nav-logo" src="images/logo.png" alt="">
+          <ul aria-label="Primary" role="list" class="nav-list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Socials</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-text | text-accent-400">JAVA ATHLETICS</h1>
-                <p class="hero-book-text | padding-block-300">
-                    Helping you become the best version of yourself through Personal Training & Nutrition.
-                </p>
-                <button class="button">Free Consultation</button>
-                <ul class="social-list" role="list" aria-label="Social links">
-                    <li><a aria-label="facebook" href="https://www.facebook.com/profile.php?id=61553470880400">
-                        <svg class="social-icon">
-                          <use xlink:href="images/social-icons.svg#icon-facebook"></use>
-                        </svg></a>
-                    </li>
-                    <li><a aria-label="instragram" href="https://www.instagram.com/java.athletics?igsh=a2JueDVsYjNwNHZr&utm_source=qr ">
-                        <svg class="social-icon">
-                          <use xlink:href="images/social-icons.svg#icon-instagram"></use>
-                        </svg>
-                      </a></li>
-                    <li><a aria-label="twitter" href="https://twitter.com/javaathletics">
-                        <svg class="social-icon">
-                          <use xlink:href="images/social-icons.svg#icon-twitter"></use>
-                        </svg>
-                      </a></li>
-                  </ul>
-                
-            </div>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-text | text-accent-400">JAVA ATHLETICS</h1>
+        <p class="hero-book-text | padding-block-300">
+          Helping you become the best version of yourself through Personal Training & Nutrition.
+        </p>
 
-            <video class="video-bg" playsinline autoplay muted loop>
-                <source src="images/hero-video-1.mp4">
-            </video>
-        </section>
+        <button class="button open-button" id="open-button">Free Consultation</button>
 
-        <section class="hero-divider | bg-accent-400">
-            <div>
-                <h2 class="text-accent-400">-</h2>
-            </div>
-        </section>
+        <dialog class="modal" id="modal">
+          <h2 class="slogan">You're one step away from your <em>FREE</em> Consultation!</h2>
 
-        <section class="hero-2 | bg-main-dark padding-block-500">
-            <div class="container">
-                <div class="even-columns">
-                  <div>
-                    <svg class="hero-icon">
-                        <use xlink:href="images/hero-icons.svg#chat-arrow-grow"></use>
-                      </svg>
-                    <p class="fs-500 padding-block-500">The goal with Java Athletics is to help everyone and anyone who is willing to take the first step in becoming the best version of themselves.
-                    </p>
-                  </div>
-                  <div>
-                    <svg class="hero-icon">
-                        <use xlink:href="images/hero-icons.svg#handshake"></use>
-                      </svg>
-                    <p class="fs-500 padding-block-500">
-                        Java Athletics is to be a place where you can be yourself and not be worried about what anyone else thinks because everyone is here to better themselves.
-                      </p>
-                  </div>
-                  <div>
-                    <svg class="hero-icon">
-                        <use xlink:href="images/hero-icons.svg#hand-holding-seeding"></use>
-                      </svg>
-                    <p class="fs-500 padding-block-500">It is also a place to not just physically grow but also to mentally grow, we all know mental health has its affects and with fitness it can be helped.
-                    </p>
-                  </div>
+          <div class="consultation-box">
+            <form class="hero-form" action="https://formspree.io/f/mnqeqlza" method="POST">
+              <div class="consultation">
+                <div class="user-box">
+                  <input type="text" id="name" name="name" required>
+                  <label for="name">Name</label>
+                </div>
+
+                <div class="user-box">
+                  <input type="email" id="email" name="_replyto" required>
+                  <label for="name">Email Address</label>
+                </div>
+
+
+                <div class="button-container">
+                  <button class="button">Submit</button>
+                  <button class="button close-button" id="close-button">Close</button>
                 </div>
               </div>
-        </section>
-
-        <!-- Options Section -->
-    <section class="option | bg-main-dark padding-block-300">
-        <div class="container">
-          <h1 class="option-header | fs-secondary-heading fw-bold text-accent-400 padding-block-500">Services to help attain your goals
-            </h2>
-            <div class="even-colums">
-              <div>
-                <ul class="numbered-items" role="list">
-                  <li class="option-container">
-                    <img class="option-img" src="images/personal-training.jpg" alt="">
-                    <div>
-                      <div class="option-text padding-block-100">
-                        <h2 class="fs-secondary-heading text-accent-400">Personal Training</h2>
-                          <p class="text-neutral-100 padding-block-500">This 1 on 1 service gives you a personalized program plan, help with
-                            habit changes, and support 24/7</p>
-                      </div>
-                      <button class="button">Book Now</button>
-                    </div>
-                  </li>
-                  <li class="option-container">
-                    <img class="option-img" src="images/virtual-training.jpg" alt="">
-                    <div>
-                      <div class="option-text padding-block-100">
-                        <h2 class="fs-secondary-heading text-accent-400">Virtual Training</h2>
-                        <p class="text-neutral-100 padding-block-500">This is another 1 on 1 service that is just through a screen. You
-                          will also get a personalized plan, zoom call and straight feedback. Also added is the help with
-                          habit changes and support 24/7.
-                        </p>
-                      </div>
-                      <button class="button">Book Now</button>
-                    </div>
-                  </li>
-                  <li class="option-container">
-                    <img class="option-img" src="images/small-group-training.jpg" alt="">
-                    <div>
-                      <div class="option-text padding-block-100">
-                        <h2 class="fs-secondary-heading text-accent-400">Small Group Training</h2>
-                        <p class="text-neutral-100 padding-block-500">This is a service that allows you to create your own group of people
-                          who are trying to achieve similar goals! It requires a minimum of 3 people and a maximum of 6.
-                        </p>
-                      </div>
-                      
-                        <button class="button">Book Now</button>
-                    </div>
-                  </li>
-                  <li class="option-container">
-                    <img class="option-img" src="images/programming.jpg" alt="">
-                    <div>
-                      <div class="option-text padding-block-100">
-                        <h2 class="fs-secondary-heading text-accent-400">Programming</h2>
-                        <p class="text-neutral-100 padding-block-500">This service gives you a personalized program, weekly check ins with a
-                          zoom call or in person. Building healthy habits plan and support 24/7.</p>
-                      </div>
-                      
-                        <button class="button">Book Now</button>
-                    </div>
-                  </li>
-                  <li class="option-container">
-                    <img class="option-img" src="images/health-plan.jpg" alt="">
-                    <div>
-                      <div class="option-text padding-block-100">
-                        <h2 class="fs-secondary-heading text-accent-400">Health Coaching</h2>
-                        <p class="text-neutral-100 padding-block-500">This 1 on 1 service starts off with a consultation, then helps to
-                          build a plan to get you building healthy food habits and learning how to grocery shop with
-                          knowledge sessions of nutrition.</p>
-                      </div>
-                        <button class="button">Book Now</button>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
-      </section>
-
-      <!-- Meet Owner Section -->
-    <section class="owner | bg-main-dark padding-block-700">
-        <div class="container">
-          <div class="owner-columns">
-            <div>
-              <img class="owner-image" src="images/owner.jpg" alt="">
-            </div>
-  
-            <div class="owner-text-container">
-              <h1 class="fs-600 text-accent-400">A WORD FROM THE CREATOR AND OWNER OF JAVA ATHLETICS</h1>
-              <p class="owner-note | fs-500 text-neutral-100 padding-block-300">Hello friends! My name is Sharon and I am so happy to be able to bring
-                Java Athletics to life. My goal in life is to help everyone and anyone who needs and wants it when it
-                comes to your overall health. I have been a certified trainer since 2020 and continue to educate myself so I can give clients the most
-                up to date version of ways to help your physical health.
-              </p>
-
-              <p class="owner-note | fs-500 text-neutral-100 padding-block-300">I have many different certifications but that
-                does not mean I know everything, I am always happy to refer my clients to trusted outside sources if it is
-                out of my scope of practice. I created Java Athletics because I hold certain values that I no longer compromise on when it comes to training clients or building my business.
-              </p>
-
-              <div class="owner-signature-text padding-block-500">
-                  <h2 class="fs-600 fw-bold text-accent-400">- Sharon Mercer</h2>
-                  <p class="fs-500 text-neutral-100">Java Athletics CEO & Founder</p>
-              </div>
-
-              <div>
-              </div>
-
-            </div>
-        </div>
-      </section>
-
-        <!-- <section class="contact | bg-main-dark">
-            <form class="form">
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="text" id="email" name="email" required="">
-                </div>
-                <div class="form-group">
-                    <label for="textarea">How Can We Help You?</label>
-                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
-                </div>
-                <button class="form-submit-btn" type="submit">Submit</button>
             </form>
-        </section> -->
-    </main>
-    <script type="module" src="/main.js"></script>
+          </div>
+        </dialog>
+
+        <ul class="social-list" role="list" aria-label="Social links">
+          <li><a aria-label="facebook" href="https://www.facebook.com/profile.php?id=61553470880400">
+              <svg class="social-icon">
+                <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+              </svg></a>
+          </li>
+          <li><a aria-label="instragram"
+              href="https://www.instagram.com/java.athletics?igsh=a2JueDVsYjNwNHZr&utm_source=qr ">
+              <svg class="social-icon">
+                <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+              </svg>
+            </a></li>
+          <li><a aria-label="twitter" href="https://twitter.com/javaathletics">
+              <svg class="social-icon">
+                <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+              </svg>
+            </a></li>
+        </ul>
+
+      </div>
+
+      <video class="video-bg" playsinline autoplay muted loop>
+        <source src="images/hero-video-1.mp4">
+      </video>
+    </section>
+
+    <section class="hero-divider | bg-accent-400">
+      <div>
+        <h2 class="text-accent-400">-</h2>
+      </div>
+    </section>
+
+    <section class="hero-2 | bg-main-dark padding-block-500">
+      <div class="container">
+        <div class="even-columns">
+          <div class="hero-2-container | padding-block-300">
+            <svg class="hero-icon">
+              <use xlink:href="images/hero-icons.svg#chat-arrow-grow"></use>
+            </svg>
+            <h2 class="fs-600 fw-bold text-accent-400 padding-block-300">Targets Personal Growth</h2>
+            <p class="hero-2-text | fs-500">The goal with Java Athletics is to help everyone and anyone who is
+              willing to take the first step in becoming the best version of themselves.
+            </p>
+          </div>
+          <div class="hero-2-container | padding-block-300">
+            <svg class="hero-icon">
+              <use xlink:href="images/hero-icons.svg#handshake"></use>
+            </svg>
+            <h2 class="fs-600 fw-bold text-accent-400 padding-block-300">Supports Inclusion for all</h2>
+            <p class="hero-2-text | fs-500">
+              Java Athletics is to be a place where you can be yourself and not be worried about what anyone else thinks
+              because everyone is here to better themselves.
+            </p>
+          </div>
+          <div class="hero-2-container | padding-block-300">
+            <svg class="hero-icon">
+              <use xlink:href="images/hero-icons.svg#hand-holding-seeding"></use>
+            </svg>
+            <h2 class="fs-600 fw-bold text-accent-400 padding-block-300">Boost Mental Health</h2>
+            <p class="hero-2-text | fs-500">It is also a place to not just physically grow but also to mentally
+              grow, we all know mental health has its affects and with fitness it can be helped.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Options Section -->
+    <section class="option | bg-main-dark padding-block-300" id="services">
+      <div class="container">
+        <h1 class="option-header | fs-secondary-heading fw-bold text-accent-400 padding-block-500">Services to help
+          attain your goals
+          </h2>
+          <div class="even-colums">
+            <div>
+              <ul class="numbered-items" role="list">
+                <li class="option-container">
+                  <img class="option-img" src="images/personal-training.jpg" alt="">
+                  <div>
+                    <div class="option-text padding-block-100">
+                      <h2 class="fs-secondary-heading text-accent-400">Personal Training</h2>
+                      <p class="text-neutral-100 padding-block-500">This 1 on 1 service gives you a personalized program
+                        plan, help with
+                        habit changes, and support 24/7</p>
+                    </div>
+                    <!-- <button class="button">Book Now</button> -->
+                    <a href="form.html?service=personal-training" class="button">Book Now</a>
+                  </div>
+                </li>
+                <li class="option-container">
+                  <img class="option-img" src="images/virtual-training.jpg" alt="">
+                  <div>
+                    <div class="option-text padding-block-100">
+                      <h2 class="fs-secondary-heading text-accent-400">Virtual Training</h2>
+                      <p class="text-neutral-100 padding-block-500">This is another 1 on 1 service that is just through
+                        a screen. You
+                        will also get a personalized plan, zoom call and straight feedback. Also added is the help with
+                        habit changes and support 24/7.
+                      </p>
+                    </div>
+                    <!-- <button class="button">Book Now</button> -->
+                    <a href="form.html?service=virtual-training" class="button">Book Now</a>
+                  </div>
+                </li>
+                <li class="option-container">
+                  <img class="option-img" src="images/small-group-training.jpg" alt="">
+                  <div>
+                    <div class="option-text padding-block-100">
+                      <h2 class="fs-secondary-heading text-accent-400">Small Group Training</h2>
+                      <p class="text-neutral-100 padding-block-500">This is a service that allows you to create your own
+                        group of people
+                        who are trying to achieve similar goals! It requires a minimum of 3 people and a maximum of 6.
+                      </p>
+                    </div>
+
+                    <!-- <button class="button">Book Now</button> -->
+                    <a href="form.html?service=small-group" class="button">Book Now</a>
+                  </div>
+                </li>
+                <li class="option-container">
+                  <img class="option-img" src="images/programming.jpg" alt="">
+                  <div>
+                    <div class="option-text padding-block-100">
+                      <h2 class="fs-secondary-heading text-accent-400">Programming</h2>
+                      <p class="text-neutral-100 padding-block-500">This service gives you a personalized program,
+                        weekly check ins with a
+                        zoom call or in person. Building healthy habits plan and support 24/7.</p>
+                    </div>
+
+                    <!-- <button class="button">Book Now</button> -->
+                    <a href="form.html?service=programming" class="button">Book Now</a>
+                  </div>
+                </li>
+                <li class="option-container">
+                  <img class="option-img" src="images/health-plan.jpg" alt="">
+                  <div>
+                    <div class="option-text padding-block-100">
+                      <h2 class="fs-secondary-heading text-accent-400">Health Coaching</h2>
+                      <p class="text-neutral-100 padding-block-500">This 1 on 1 service starts off with a consultation,
+                        then helps to
+                        build a plan to get you building healthy food habits and learning how to grocery shop with
+                        knowledge sessions of nutrition.</p>
+                    </div>
+                    <!-- <button class="button">Book Now</button> -->
+                    <a href="form.html?service=health-coaching" class="button">Book Now</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Meet Owner Section -->
+    <section class="owner | bg-main-dark padding-block-700" id="owner">
+      <div class="container">
+        <div class="owner-columns">
+          <div>
+            <img class="owner-image" src="images/owner.jpg" alt="">
+          </div>
+
+          <div class="owner-text-container">
+            <h1 class="fs-600 text-accent-400 padding-block-300">A WORD FROM THE CREATOR AND OWNER OF JAVA ATHLETICS</h1>
+            <p class="owner-note | fs-500 text-neutral-100 padding-block-300">Hello friends! My name is Sharon and I am
+              so happy to be able to bring
+              Java Athletics to life. My goal in life is to help everyone and anyone who needs and wants it when it
+              comes to your overall health. I have been a certified trainer since 2020 and continue to educate myself so
+              I can give clients the most
+              up to date version of ways to help your physical health.
+            </p>
+
+            <p class="owner-note | fs-500 text-neutral-100 padding-block-300">I have many different certifications but
+              that
+              does not mean I know everything, I am always happy to refer my clients to trusted outside sources if it is
+              out of my scope of practice. I created Java Athletics because I hold certain values that I no longer
+              compromise on when it comes to training clients or building my business.
+            </p>
+
+            <div class="owner-signature-text padding-block-500">
+              <h2 class="fs-600 fw-bold text-accent-400">- Sharon Mercer</h2>
+              <p class="fs-500 text-neutral-100">Java Athletics CEO & Founder</p>
+            </div>
+
+            <div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+  </main>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="hero-modal.js"></script>
 </body>
 
 </html>
