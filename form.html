@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
+          <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <!-- <img class="nav-logo" src="images/logo.png" alt=""> -->
+        <nav class="primary-navigation" id="primary-navigation">
+          <img class="nav-logo" src="images/logo.png" alt="">
+          <ul aria-label="Primary" role="list" class="nav-list">
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#owner">About Us</a></li>
+            <li><a href="index.html#review">Feedback</a></li>
+            <li><a href="index.html#hero">Socials</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="form-section | padding-block-500">
+    <form class="service-form" action="https://formspree.io/f/mnqeqlza" method="POST">
+      <h2 class="form-header | padding-block-500 text-accent-400">Ready To Become Your Best Version?</h2>
+      <div class="form-container">
+        <div>
+          <p class="text-main-light">*All Fields Required</p>
+          <label for="fname">First Name*</label>
+          <input type="text" id="fname" name="firstname" required>
+
+          <label for="lname">Last Name*</label>
+          <input type="text" id="lname" name="lastname" required>
+
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="_replyto" required>
+
+          <label for="phone">Phone Number*</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div>
+          <label for="service">Select Service of Interest</label>
+          <select id="service" name="service">
+            <option value="personal-training">Personal Training</option>
+            <option value="virtual-training">Virtual Training</option>
+            <option value="small-group">Small Group Training</option>
+            <option value="programming">Programming</option>
+            <option value="health-coaching">Health Coaching</option>
+            <!-- Add other services -->
+          </select>
+
+          <fieldset>
+            <legend>Select Your Goal(s)</legend>
+            <!-- Add checkboxes for each goal -->
+            <label><input type="checkbox" name="goal" value="strength"> Increase Strength</label>
+            <label><input type="checkbox" name="goal" value="strength"> Increase Mobility</label>
+            <label><input type="checkbox" name="goal" value="strength"> Increase Endurance</label>
+            <label><input type="checkbox" name="goal" value="strength"> Learn Basic Fundamentals</label>
+            <label><input type="checkbox" name="goal" value="strength"> Grow Muscle</label>
+            <label><input type="checkbox" name="goal" value="strength"> Body Fat Loss</label>
+            <!-- Repeat for other goals -->
+          </fieldset>
+        </div>
+      </div>
+
+      <button class="form-button" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script>
+    window.onload = function () {
+      var urlParams = new URLSearchParams(window.location.search);
+      var service = urlParams.get('service');
+      if (service) {
+        var serviceSelect = document.getElementById('service');
+        serviceSelect.value = service;
+      }
+    };
+  </script>
+
+<script type="module" src="main.js"></script>
+</body>
+
+</html>
