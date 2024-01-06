@@ -33,66 +33,117 @@
       </div>
     </div>
   </header>
-  <section class="form-section | padding-block-500">
-    <form class="service-form" action="https://formspree.io/f/mnqeqlza" method="POST">
-      <h2 class="form-header | padding-block-500 text-accent-400">Ready To Become Your Best Version?</h2>
-      <div class="form-container">
-        <div>
-          <p class="text-main-light">*All Fields Required</p>
-          <label for="fname">First Name*</label>
-          <input type="text" id="fname" name="firstname" required>
+  <main>
+    <section class="form-section | padding-block-900">
+      <form class="service-form" action="https://formspree.io/f/mnqeqlza" method="POST">
+        <h2 class="form-header | padding-block-500 text-accent-400">Ready To Become Your Best Version?</h2>
+        <div class="form-container">
+          <div>
+            <p class="text-main-light">*All Fields Required</p>
+            <label for="fname">First Name*</label>
+            <input type="text" id="fname" name="firstname" required>
 
-          <label for="lname">Last Name*</label>
-          <input type="text" id="lname" name="lastname" required>
+            <label for="lname">Last Name*</label>
+            <input type="text" id="lname" name="lastname" required>
 
-          <label for="email">Email*</label>
-          <input type="email" id="email" name="_replyto" required>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="_replyto" required>
 
-          <label for="phone">Phone Number*</label>
-          <input type="tel" id="phone" name="phone" required>
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div>
+            <label for="service">Select Service of Interest</label>
+            <select id="service" name="service">
+              <option value="personal-training">Personal Training</option>
+              <option value="virtual-training">Virtual Training</option>
+              <option value="small-group">Small Group Training</option>
+              <option value="programming">Programming</option>
+              <option value="health-coaching">Health Coaching</option>
+              <!-- Add other services -->
+            </select>
+
+            <fieldset>
+              <legend>Select Your Goal(s)</legend>
+              <!-- Add checkboxes for each goal -->
+              <label><input type="checkbox" name="goal" value="strength"> Increase Strength</label>
+              <label><input type="checkbox" name="goal" value="strength"> Increase Mobility</label>
+              <label><input type="checkbox" name="goal" value="strength"> Increase Endurance</label>
+              <label><input type="checkbox" name="goal" value="strength"> Learn Basic Fundamentals</label>
+              <label><input type="checkbox" name="goal" value="strength"> Grow Muscle</label>
+              <label><input type="checkbox" name="goal" value="strength"> Body Fat Loss</label>
+              <!-- Repeat for other goals -->
+            </fieldset>
+          </div>
         </div>
 
-        <div>
-          <label for="service">Select Service of Interest</label>
-          <select id="service" name="service">
-            <option value="personal-training">Personal Training</option>
-            <option value="virtual-training">Virtual Training</option>
-            <option value="small-group">Small Group Training</option>
-            <option value="programming">Programming</option>
-            <option value="health-coaching">Health Coaching</option>
-            <!-- Add other services -->
-          </select>
+        <button class="form-button" type="submit">Submit</button>
+      </form>
+    </section>
 
-          <fieldset>
-            <legend>Select Your Goal(s)</legend>
-            <!-- Add checkboxes for each goal -->
-            <label><input type="checkbox" name="goal" value="strength"> Increase Strength</label>
-            <label><input type="checkbox" name="goal" value="strength"> Increase Mobility</label>
-            <label><input type="checkbox" name="goal" value="strength"> Increase Endurance</label>
-            <label><input type="checkbox" name="goal" value="strength"> Learn Basic Fundamentals</label>
-            <label><input type="checkbox" name="goal" value="strength"> Grow Muscle</label>
-            <label><input type="checkbox" name="goal" value="strength"> Body Fat Loss</label>
-            <!-- Repeat for other goals -->
-          </fieldset>
+    <script>
+      window.onload = function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var service = urlParams.get('service');
+        if (service) {
+          var serviceSelect = document.getElementById('service');
+          serviceSelect.value = service;
+        }
+      };
+    </script>
+  </main>
+
+
+  <footer class="bg-main-black">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2 class="footer-heading | fs-600 text-accent-400 fw-bold">Java Athletics</h2>
+
+        <div class="footer-text">
+          <p>5307 Canotek Rd,</p>
+          <p>Gloucester, ON, K1J 9M2</p>
+        </div>
+
+        <div class="footer-text">
+          <p>(613)-898-2474</p>
+          <p>javaathletics@outlook.com</p>
         </div>
       </div>
 
-      <button class="form-button" type="submit">Submit</button>
-    </form>
-  </section>
+      <div class="footer-section">
+        <img class="footer-image" src="images/logo.png" alt="">
+      </div>
 
-  <script>
-    window.onload = function () {
-      var urlParams = new URLSearchParams(window.location.search);
-      var service = urlParams.get('service');
-      if (service) {
-        var serviceSelect = document.getElementById('service');
-        serviceSelect.value = service;
-      }
-    };
-  </script>
+      <div class="footer-section">
+        <h2 class="fs-600 text-accent-400 fw-bold">Follow Us</h2>
+        <div class="social-container">
+          <a aria-label="facebook" href="https://www.facebook.com/profile.php?id=61553470880400">
+            <svg class="social-icon">
+              <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a aria-label="facebook" href="https://www.instagram.com/java.athletics?igsh=a2JueDVsYjNwNHZr&utm_source=qr">
+            <svg class="social-icon">
+              <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a aria-label="facebook" href="https://twitter.com/javaathletics">
+            <svg class="social-icon">
+              <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a aria-label="facebook" href="https://www.tiktok.com/@java.athletics?_t=8ilRi9RteCb&_r=1">
+            <svg class="social-icon">
+              <use xlink:href="images/social-icons.svg#icon-tiktok"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<script type="module" src="main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
