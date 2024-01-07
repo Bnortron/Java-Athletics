@@ -408,8 +408,9 @@ section {
   margin-inline: 1em;
 
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
-  background: transparent;
-  backdrop-filter: blur(10px);
+  background: transparent !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
 
   display: block;
   text-align: left;
@@ -657,7 +658,8 @@ section {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
   border-radius: 2em;
   background: transparent;
-  backdrop-filter: blur(0.5em);
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(0.5em) !important;
   /* border-radius: 5px; */
   /* margin-top: 3em; */
 }
