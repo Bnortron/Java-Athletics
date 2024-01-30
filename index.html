@@ -14,14 +14,15 @@
 <body>
   <header class="primary-header">
     <div class="container">
+
       <div class="nav-wrapper">
+        <img src="images/logo.png" class="nav-logo" alt="">
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-          <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
-          <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
+          <!-- <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true"> -->
+          <!-- <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true"> -->
           <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-navigation" id="primary-navigation">
-          <img class="nav-logo" src="images/logo.png" alt="">
           <ul aria-label="Primary" role="list" class="nav-list">
             <li><a href="#services">Services</a></li>
             <li><a href="#">About Us</a></li>
@@ -87,17 +88,12 @@
               </svg>
             </a></li>
         </ul>
-
       </div>
 
-      <video class="video-bg" playsinline autoplay muted loop>
-        <source src="images/hero-video-1.mp4">
-      </video>
-    </section>
-
-    <section class="hero-divider | bg-accent-400">
-      <div>
-        <h2 class="text-accent-400">-</h2>
+      <div class="video-container">
+        <video class="video-bg" playsinline autoplay muted loop>
+          <source src="images/hero-video-1.mp4">
+        </video>
       </div>
     </section>
 
@@ -108,8 +104,9 @@
             <svg class="hero-icon">
               <use xlink:href="images/hero-icons.svg#chat-arrow-grow"></use>
             </svg>
-            <h2 class="fs-600 fw-bold text-accent-400 padding-block-300">Targets Personal Growth</h2>
-            <p class="hero-2-text | fs-500">The goal with Java Athletics is to help everyone and anyone who is
+            <h2 class="fs-500 fw-bold text-accent-400 padding-block-300">Supports Personal Growth</h2>
+            <p class="hero-2-text | fs-400 padding-block-300">The goal with Java Athletics is to help everyone and
+              anyone who is
               willing to take the first step in becoming the best version of themselves.
             </p>
           </div>
@@ -117,8 +114,8 @@
             <svg class="hero-icon">
               <use xlink:href="images/hero-icons.svg#handshake"></use>
             </svg>
-            <h2 class="fs-600 fw-bold text-accent-400 padding-block-300">Supports Inclusion for all</h2>
-            <p class="hero-2-text | fs-500">
+            <h2 class="fs-500 fw-bold text-accent-400 padding-block-300">Supports Inclusion for all</h2>
+            <p class="hero-2-text | fs-400 padding-block-300">
               Java Athletics is to be a place where you can be yourself and not be worried about what anyone else thinks
               because everyone is here to better themselves.
             </p>
@@ -127,8 +124,9 @@
             <svg class="hero-icon">
               <use xlink:href="images/hero-icons.svg#hand-holding-seeding"></use>
             </svg>
-            <h2 class="fs-600 fw-bold text-accent-400 padding-block-300">Boost Mental Health</h2>
-            <p class="hero-2-text | fs-500">It is also a place to not just physically grow but also to mentally
+            <h2 class="fs-500 fw-bold text-accent-400 padding-block-300">Supports Mental Health</h2>
+            <p class="hero-2-text | fs-400 padding-block-300">It is also a place to not just physically grow but also to
+              mentally
               grow, we all know mental health has its affects and with fitness it can be helped.
             </p>
           </div>
@@ -137,101 +135,98 @@
     </section>
 
     <!-- Options Section -->
-    <section class="option | bg-main-dark padding-block-300" id="services">
+    <section class="option | bg-main-dark padding-block-500" id="services">
       <div class="container">
-        <h1 class="option-header | fs-secondary-heading fw-bold text-accent-400 padding-block-500">Services to help
-          attain your goals
-          </h2>
-          <div class="even-colums">
-            <div>
-              <ul class="numbered-items" role="list">
-                <li class="option-container">
-                  <img class="option-img" src="images/personal-training.jpg" alt="">
-                  <div>
-                    <div class="option-text padding-block-100">
-                      <h2 class="fs-secondary-heading text-accent-400">Personal Training</h2>
-                      <p class="text-neutral-100 padding-block-500">This 1 on 1 service gives you a personalized program
-                        plan, help with
-                        habit changes, and support 24/7</p>
-                    </div>
-                    <!-- <button class="button">Book Now</button> -->
-                    <a href="form.html?service=personal-training" class="button">Book Now</a>
+        <h1 class="option-header | fs-primary-heading fw-bold text-accent-400">Discover Our Services</h1>
+        <p class="option-subheader | fs-body padding-block-500">Java Athletics provides a large variety of services to help you attain your goals</p>
+        <div class="even-colums">
+          <div>
+            <ul class="numbered-items" role="list">
+              <li class="option-container">
+                <img class="option-img" src="images/personal-training.jpg" alt="">
+                <div>
+                  <div class="option-text">
+                    <h2 class="fs-secondary-heading text-accent-400">Personal Training</h2>
+                    <p class="text-neutral-100 padding-block-300">This 1 on 1 service gives you a personalized program
+                      plan, help with
+                      habit changes, and support 24/7</p>
                   </div>
-                </li>
-                <li class="option-container">
-                  <img class="option-img" src="images/virtual-training.jpg" alt="">
-                  <div>
-                    <div class="option-text padding-block-100">
-                      <h2 class="fs-secondary-heading text-accent-400">Virtual Training</h2>
-                      <p class="text-neutral-100 padding-block-500">This is another 1 on 1 service that is just through
-                        a screen. You
-                        will also get a personalized plan, zoom call and straight feedback. Also added is the help with
-                        habit changes and support 24/7.
-                      </p>
-                    </div>
-                    <!-- <button class="button">Book Now</button> -->
-                    <a href="form.html?service=virtual-training" class="button">Book Now</a>
-                  </div>
-                </li>
-                <li class="option-container">
-                  <img class="option-img" src="images/small-group-training.jpg" alt="">
-                  <div>
-                    <div class="option-text padding-block-100">
-                      <h2 class="fs-secondary-heading text-accent-400">Small Group Training</h2>
-                      <p class="text-neutral-100 padding-block-500">This is a service that allows you to create your own
-                        group of people
-                        who are trying to achieve similar goals! It requires a minimum of 3 people and a maximum of 6.
-                      </p>
-                    </div>
+                  <a href="form.html?service=personal-training" class="button">Book Now</a>
+                </div>
+              </li>
 
-                    <!-- <button class="button">Book Now</button> -->
-                    <a href="form.html?service=small-group" class="button">Book Now</a>
+              <li class="option-container">
+                <img class="option-img" src="images/virtual-training.jpg" alt="">
+                <div>
+                  <div class="option-text">
+                    <h2 class="fs-secondary-heading text-accent-400">Online Training</h2>
+                    <p class="text-neutral-100 padding-block-300">This is another 1 on 1 service that is just through
+                      a screen. You
+                      will also get a personalized plan, zoom call and straight feedback. Also added is the help with
+                      habit changes and support 24/7.
+                    </p>
                   </div>
-                </li>
-                <li class="option-container">
-                  <img class="option-img" src="images/programming.jpg" alt="">
-                  <div>
-                    <div class="option-text padding-block-100">
-                      <h2 class="fs-secondary-heading text-accent-400">Programming</h2>
-                      <p class="text-neutral-100 padding-block-500">This service gives you a personalized program,
-                        weekly check ins with a
-                        zoom call or in person. Building healthy habits plan and support 24/7.</p>
-                    </div>
+                  <a href="form.html?service=virtual-training" class="button">Book Now</a>
+                </div>
+              </li>
 
-                    <!-- <button class="button">Book Now</button> -->
-                    <a href="form.html?service=programming" class="button">Book Now</a>
+              <li class="option-container">
+                <img class="option-img" src="images/small-group-training.jpg" alt="">
+                <div>
+                  <div class="option-text padding-block-100">
+                    <h2 class="fs-secondary-heading text-accent-400">Small Group Training</h2>
+                    <p class="text-neutral-100 padding-block-300">This is a service that allows you to create your own
+                      group of people
+                      who are trying to achieve similar goals! It requires a minimum of 3 people and a maximum of 6.
+                    </p>
                   </div>
-                </li>
-                <li class="option-container">
-                  <img class="option-img" src="images/health-plan.jpg" alt="">
-                  <div>
-                    <div class="option-text padding-block-100">
-                      <h2 class="fs-secondary-heading text-accent-400">Health Coaching</h2>
-                      <p class="text-neutral-100 padding-block-500">This 1 on 1 service starts off with a consultation,
-                        then helps to
-                        build a plan to get you building healthy food habits and learning how to grocery shop with
-                        knowledge sessions of nutrition.</p>
-                    </div>
-                    <!-- <button class="button">Book Now</button> -->
-                    <a href="form.html?service=health-coaching" class="button">Book Now</a>
+                  <a href="form.html?service=small-group" class="button">Book Now</a>
+                </div>
+              </li>
+
+              <li class="option-container">
+                <img class="option-img" src="images/programming.jpg" alt="">
+                <div>
+                  <div class="option-text padding-block-100">
+                    <h2 class="fs-secondary-heading text-accent-400">Programming</h2>
+                    <p class="text-neutral-100 padding-block-300">This service gives you a personalized program,
+                      weekly check ins with a
+                      zoom call or in person. Building healthy habits plan and support 24/7.</p>
                   </div>
-                </li>
-              </ul>
-            </div>
+                  <a href="form.html?service=programming" class="button">Book Now</a>
+                </div>
+              </li>
+
+              <li class="option-container">
+                <img class="option-img" src="images/health-plan.jpg" alt="">
+                <div>
+                  <div class="option-text padding-block-100">
+                    <h2 class="fs-secondary-heading text-accent-400">Health Coaching</h2>
+                    <p class="text-neutral-100 padding-block-300">This 1 on 1 service starts off with a consultation,
+                      then helps to
+                      build a plan to get you building healthy food habits and learning how to grocery shop with
+                      knowledge sessions of nutrition.</p>
+                  </div>
+                  <a href="form.html?service=health-coaching" class="button">Book Now</a>
+                </div>
+              </li>
+            </ul>
           </div>
+        </div>
       </div>
     </section>
 
     <!-- Meet Owner Section -->
-    <section class="owner | bg-main-dark padding-block-700" id="owner">
+    <!-- <section class="owner | bg-main-dark" id="owner">
       <div class="container">
         <div class="owner-columns">
-          <div>
+          <div class="owner-image-container">
             <img class="owner-image" src="images/owner.jpg" alt="">
           </div>
 
           <div class="owner-text-container">
-            <h1 class="fs-600 text-accent-400 padding-block-300">A WORD FROM THE CREATOR AND OWNER OF JAVA ATHLETICS</h1>
+            <h1 class="fs-600 text-accent-400 padding-block-300">A WORD FROM THE CREATOR AND OWNER OF JAVA ATHLETICS
+            </h1>
             <p class="owner-note | fs-500 text-neutral-100 padding-block-300">Hello friends! My name is Sharon and I am
               so happy to be able to bring
               Java Athletics to life. My goal in life is to help everyone and anyone who needs and wants it when it
@@ -248,8 +243,8 @@
             </p>
 
             <div class="owner-signature-text padding-block-500">
-              <h2 class="fs-600 fw-bold text-accent-400">- Sharon Mercer</h2>
-              <p class="fs-500 text-neutral-100">Java Athletics CEO & Founder</p>
+              
+              
             </div>
 
             <div>
@@ -257,8 +252,366 @@
 
           </div>
         </div>
+    </section> -->
+
+    <!-- Meet Owner Section Revamp -->
+    <section class="padding-block-500">
+      <div class="wrapper">
+      </div>
     </section>
 
+    <section class="full-width-split-screen">
+      <img class="owner-image" src="images/owner.jpg" alt="">
+      <div>
+        <h1 class="owner-heading | fs-600 fw-bold text-accent-400">A Word from the Owner of Java Athletics</h1>
+        <p class="padding-block-300">Hello friends,</p>
+        <p class="owner-note | padding-block-300">My name is Sharon and I am so happy to be able to bring Java Athletics to life. My goal in life is to help everyone and anyone who needs and wants it when it comes to your overall health. I have been a certified trainer since 2020 and continue to educate myself so I can give clients the most up to date version of ways to help your physical health.</p>
+        <p class="owner-note | padding-block-500">I have many different certifications but that does not mean I know everything, I am always happy to refer my clients to trusted outside sources if it is out of my scope of practice. I created Java Athletics because I hold certain values that I no longer compromise on when it comes to training clients or building my business.</p>
+        <p class="fs-500 fw-bold text-accent-400">- Sharon Mercer</p>
+
+        <p class="fs-400 text-neutral-100">Java Athletics CEO & Founder</p>
+      </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="certification | padding-block-500">
+      <div class="wrapper">
+        <h2 class="cert-heading | fs-secondary-heading text-accent-400">Certifications & Education</h2>
+        <div class="grid-even-columns | padding-block-500">
+          <div class="cert-container">
+            <img class="icon" src="images/csep-logo.png" alt="">
+            <div class="flow-text | padding-block-300">
+              <h3 class="fs-500 fw-bold text-accent-400">CSEP-CPT</h3>
+              <p>Completed the CSEP - Certified Personal Trainer tests. </p>
+            </div>
+
+          </div>
+          <div class="cert-container">
+            <img class="icon" src="images/ps-logo.png" alt="">
+            <div class="flow-text | padding-block-300">
+              <h3 class="fs-500 fw-bold text-accent-400">Pre-Script L1</h3>
+              <p>Completed Level 1 certification through Pre-Script. Learned about the anatomy and the mechanics of the
+                body.</p>
+            </div>
+
+          </div>
+          <div class="cert-container">
+            <img class="icon" src="images/dts-logo.png" alt="">
+            <div class="flow-text | padding-block-300">
+              <h3 class="fs-500 fw-bold text-accent-400">DTS - Kettlebells</h3>
+              <p>Completed the Kettlebells coach certification through DTS. Learned how to use a kettlebell in
+                exercises. </p>
+            </div>
+
+          </div>
+          <div class="cert-container">
+            <img class="icon" src="images/dts-logo.png" alt="">
+            <div class="flow-text | padding-block-300">
+              <h3 class="fs-500 fw-bold text-accent-400">DTS - Mini Core</h3>
+              <p>Completed the Mini Core certification through DTS. Learned how to teach clients to engage their core in
+                different methods and learned how to keep core engaged in certain exercises.</p>
+            </div>
+
+          </div>
+          <div class="cert-container">
+            <img class="icon" src="images/eta-logo.PNG" alt="">
+            <div class="flow-text | padding-block-300">
+              <h3 class="fs-500 fw-bold text-accent-400">ETA - L1</h3>
+              <p>Completed the Level 1 certification through ETA. Learned different assessments, and protoals to help
+                clientele. </p>
+            </div>
+
+          </div>
+          <div class="cert-container">
+            <img class="icon" src="images/ac-logo.PNG" alt="">
+            <div class="flow-text | padding-block-300">
+              <h3 class="fs-500 fw-bold text-accent-400">Algonquin College - FHP</h3>
+              <p>Completed the 2 year program, Fitness and Health Promotion to gain the base knowledge of how to assess,
+                program and train clients. </p>
+            </div>
+
+          </div>
+          <div class="cert-container">
+            <img class="icon" src="images/ggs-logo.png" alt="">
+            <div class="flow-text | padding-block-300">
+              <h3 class="fs-500 fw-bold text-accent-400">GGS - Pre & Post Natal</h3>
+              <p>Completed the Pre & Post Natal certification through the GGS. Learn about the nutrition, adaptation and
+                exercises that women can/cannot do during both pre and post natal.</p>
+            </div>
+
+          </div>
+          <div class="cert-container">
+            <img class="icon" src="images/nc-logo.png" alt="">
+            <div class="flow-text | padding-block-300">
+              <h3 class="fs-500 fw-bold text-accent-400">Niagara College - NSP</h3>
+              <p>Completed the 1 year program, Nutrition for Sport and Performance, to gain the knowledge on how to
+                assess, research and plan a nutrition program for athletes. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing | padding-block-900">
+      <div class="wrapper">
+        <h1 class="pricing-heading | fw-bold">Pricing & Plans</h1>
+        <div class="tabs-container">
+          <ul class="tab-list" aria-labelledby="tabs-title">
+            <li><a id="tab-1" class="pricing-button" href="#personal-training">Studio</a></li>
+            <li><a id="tab-2" class="pricing-button" href="#online">Online</a></li>
+            <li><a id="tab-3" class="pricing-button" href="#programming">Programming</a></li>
+            <li><a id="tab-4" class="pricing-button" href="#health-coaching">Health</a></li>
+          </ul>
+
+          <div class="tabs__panels flow">
+            <!-- Training Panel-->
+            <div class="panel" id="personal-training" aria-labelledby="tab-1">
+              <div class="package | border-accent">
+
+                <p class="package-price">$150</p>
+
+                <div class="package-text-container">
+                  <p class="package-name">Accountability Package</p>
+                  <ul class="package-description">
+                    <li>1 Session per Week</li>
+                    <li>1 Hour Sessions</li>
+                    <li>Bi-weekly or Monthly Payments</li>
+                    <li>Personalized Program</li>
+                    <li>Access to Private Studio</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="package | border-accent">
+                <p class="package-price">$300</p>
+
+                <div class="package-text-container">
+                  <p class="package-name">Results Package</p>
+                  <ul class="package-description">
+                    <li>2 Sessions per Week</li>
+                    <li>1 Hour Sessions</li>
+                    <li>Bi-weekly or Monthly Payments</li>
+                    <li>Personalized Program</li>
+                    <li>Access to Private Studio</li>
+                  </ul>
+                </div>
+
+                <div class="circle">
+                  <p class="most-popular">Most</p>
+                  <p class="most-popular">Popular</p>
+                </div>
+              </div>
+
+              <div class="package | border-accent">
+                <p class="package-price">$450</p>
+                <div class="package-text-container">
+                  <p class="package-name">Goals Package</p>
+                  <ul class="package-description">
+                    <li>3 Sessions per Week</li>
+                    <li>1 Hour Sessions</li>
+                    <li>Bi-weekly or Monthly Payments</li>
+                    <li>Personalized Program</li>
+                    <li>Access to Private Studio</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Online Panel -->
+            <div class="panel" id="online" aria-labelledby="tab-2">
+              <div class="package | border-accent">
+                <p class="package-price">$250</p>
+                <div class="package-text-container">
+                  <p class="package-name">Trial Package</p>
+                  <ul class="package-description">
+                    <li>1 Session per Week</li>
+                    <li>1 Hour Sessions</li>
+                    <li>Bi-weekly or Monthly Payments</li>
+                    <li>Personalized Program</li>
+                    <li>Nutrituion Guidance</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="package | border-accent">
+                <p class="package-price">$350</p>
+                <div class="package-text-container">
+                  <p class="package-name">Building Package</p>
+                  <ul class="package-description">
+                    <li>2 Sessions per Week</li>
+                    <li>1 Hour Sessions</li>
+                    <li>Bi-weekly or Monthly Payments</li>
+                    <li>Personalized Program</li>
+                    <li>Nutrituion Guidance</li>
+                  </ul>
+                </div>
+
+                <div class="circle">
+                  <p class="most-popular">Most</p>
+                  <p class="most-popular">Popular</p>
+                </div>
+              </div>
+
+              <div class="package | border-accent">
+                <p class="package-price">$450</p>
+                <div class="package-text-container">
+                  <p class="package-name">Advantage Package</p>
+                  <ul class="package-description">
+                    <li>3 Sessions per Week</li>
+                    <li>1 Hour Sessions</li>
+                    <li>Bi-weekly or Monthly Payments</li>
+                    <li>Personalized Program</li>
+                    <li>Nutrituion Guidance</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <!-- Programming Panel -->
+            <div class="panel" id="programming" aria-labelledby="tab-3">
+              <div class="package | border-accent">
+                <p class="package-price">$200</p>
+                <div class="package-text-container">
+                  <p class="package-name">Trial Package</p>
+                  <ul class="package-description">
+                    <li>4 Weeks of Programming</li>
+                    <li>Once per week Virtual Check-In</li>
+                    <li>Weekly Video Analysis</li>
+                    <li>Personalized Program</li>
+                    <li>Access to Private Studio</li>
+                    <li>Modifications/Changes If Necessary</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="package | border-accent">
+                <p class="package-price">$600</p>
+                <div class="package-text-container">
+                  <p class="package-name">Building Package</p>
+                  <ul class="package-description">
+                    <li>12 Weeks of Programming</li>
+                    <li>Once per week Virtual Check-In</li>
+                    <li>Weekly Video Analysis</li>
+                    <li>Personalized Program</li>
+                    <li>Access to Private Studio</li>
+                    <li>Modifications/Changes If Necessary</li>
+                  </ul>
+                </div>
+
+                <div class="circle">
+                  <p class="most-popular">Most</p>
+                  <p class="most-popular">Popular</p>
+                </div>
+              </div>
+
+              <div class="package | border-accent">
+                <p class="package-price">$1000</p>
+                <div class="package-text-container">
+                  <p class="package-name">Advantage Package</p>
+                  <ul class="package-description">
+                    <li>20 Weeks of Programming</li>
+                    <li>Once per week Virtual Check-In</li>
+                    <li>Weekly Video Analysis</li>
+                    <li>Personalized Program</li>
+                    <li>Access to Private Studio</li>
+                    <li>Modifications/Changes If Necessary</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Health Coaching Panel -->
+            <div class="panel" id="health-coaching" aria-labelledby="tab-4">
+              <div class="package | border-accent">
+                <p class="package-price">$200</p>
+                <div class="package-text-container">
+                  <p class="package-name">Learning Package</p>
+                  <ul class="package-description">
+                    <li>1 Hour Consultation</li>
+                    <li>1 Month Follow-Up</li>
+                    <li>Healthy Habit Training</li>
+                    <li>Weekly Check-In</li>
+                    <li>Grocery List & Meal Planning</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="package | border-accent">
+                <p class="package-price">$400</p>
+                <div class="package-text-container">
+                  <p class="package-name">Shift Package</p>
+                  <ul class="package-description">
+                    <li>1 Hour Consultation</li>
+                    <li>1 Month Follow-Up</li>
+                    <li>Healthy Habit Training</li>
+                    <li>Weekly Check-In</li>
+                    <li>Grocery List & Meal Planning</li>
+                  </ul>
+                </div>
+
+                <div class="circle">
+                  <p class="most-popular">Most</p>
+                  <p class="most-popular">Popular</p>
+                </div>
+              </div>
+
+              <div class="package | border-accent">
+                <p class="package-price">$800</p>
+                <div class="package-text-container">
+                  <p class="package-name">Power Package</p>
+                  <ul class="package-description">
+                    <li>1 Hour Consultation</li>
+                    <li>1 Month Follow-Up</li>
+                    <li>Healthy Habit Training</li>
+                    <li>Weekly Check-In</li>
+                    <li>Grocery List & Meal Planning</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <!-- Location Section -->
+    <section class="location | bg-main-dark padding-block-500">
+      <h1 class="location-heading | text-accent-400 fw-bold">Explore Our Location</h1>
+      <p class="location-subheading">Located in the heart of Gloucester just a few minutes outside the Ottawa, ON area.</p>
+      <div class="map-container">
+        <div class="google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.837488776107!2d-75.59039872263396!3d45.452930834188905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce1153acb85a9d%3A0xc6fec85c0bef3b72!2sOrganic%20Strength!5e0!3m2!1sen!2sca!4v1706544787085!5m2!1sen!2sca"
+            width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="media-scroller snaps-inline">
+          <div class="media-element">
+            <img src="images/studio-1.jpg" alt="">
+          </div>
+          <div class="media-element">
+            <img src="images/studio-2.jpg" alt="">
+          </div>
+          <div class="media-element">
+            <img src="images/studio-3.jpg" alt="">
+          </div>
+          <div class="media-element">
+            <img src="images/studio-4.jpg" alt="">
+          </div>
+          <div class="media-element">
+            <img src="images/studio-5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="bg-main-black">
