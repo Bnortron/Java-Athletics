@@ -1139,6 +1139,15 @@ h2 em {
   margin-left: 0;
 }
 
+.package-price-2 {
+  position: relative;
+  color: var(--clr-accent-400);
+  /* font-size: clamp(2.5rem, 6vw, 4rem); */
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 0;
+}
+
 .package-price::after {
   content: '*Bi-Weekly';
   color: #888888;
@@ -1253,7 +1262,7 @@ h2 em {
   bottom: -2.75em;
   /* left: 4.7em; */
   transform: translateY(-50%);
-  transform: translateX(75%);
+  transform: translateX(72%);
 }
 
 .circle::after {
@@ -1307,7 +1316,7 @@ h2 em {
   }
 
   .circle {
-    transform: translateX(10%);
+    transform: translateX(5%);
   }
 
   .package-name {
