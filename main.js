@@ -45,3 +45,4 @@ btnList.forEach(btnEl => {
         btnEl.classList.add('selected');
     });
 });
+  
