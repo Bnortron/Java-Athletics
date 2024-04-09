@@ -1487,7 +1487,7 @@ h2 em {
   gap: var(--spacer);
   padding: var(--spacer);
   /* background-image: url('images/grey-grid.svg'); */
-  background-color: #1b1b1b;
+  background-color: var(--clr-main-black);
   border-radius: var(--br);
   box-shadow: var(--shadow-4);
 }
@@ -1504,6 +1504,20 @@ h2 em {
 
 .snaps-inline > * {
   scroll-snap-align: start;
+}
+
+.media-element.expanded {
+  grid-column: 1 / -1;
+  max-width: 100%;
+  max-height: 100%;
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  margin: auto;
 }
 
 /* Utility Classes */
