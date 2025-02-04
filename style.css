@@ -1464,7 +1464,7 @@ h2 em {
   width: 100% !important;
   height: 100% !important;
 
-  filter: invert(100%);
+  /* filter: invert(100%); */
 }
 
 .media-scroller {
